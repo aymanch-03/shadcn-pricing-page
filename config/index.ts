@@ -27,7 +27,7 @@ export const TIERS: PricingTier[] = [
       "10 monitors",
       "Up to 3 seats",
     ],
-    cta: "Get started with Individuals",
+    cta: "Get started",
   },
   {
     id: "teams",
@@ -44,7 +44,7 @@ export const TIERS: PricingTier[] = [
       "20 monitors",
       "Up to 6 seats",
     ],
-    cta: "Get started with Teams",
+    cta: "Get started",
     popular: true,
   },
   {
@@ -62,7 +62,7 @@ export const TIERS: PricingTier[] = [
       "50 monitors",
       "Up to 10 seats",
     ],
-    cta: "Get started with Organizations",
+    cta: "Get started",
   },
   {
     id: "enterprise",
