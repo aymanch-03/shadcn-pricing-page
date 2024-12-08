@@ -6,8 +6,7 @@ A responsive and customizable pricing component built with Shadcn/UI. Includes p
 - Responsive design for all devices  
 - Payment frequency toggles (e.g., Monthly/Yearly)  
 - Tiered pricing cards with customizable highlights
-- Price transition using NumberFlow Component by [barvian]()
-- Smooth price transition with animated number flow using the [NumberFlow Component](https://github.com/barvian/number-flow) by [barvian](https://github.com/barvian)
+- Smooth price transition using the [NumberFlow Component](https://github.com/barvian/number-flow) by [barvian](https://github.com/barvian)
 - Built with shadcn/ui and Next.js
 
 ---
