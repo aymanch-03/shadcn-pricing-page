@@ -3,6 +3,7 @@ import AnimatedTooltip from "@/components/ui/animated-tooltip";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 
 const satoshi = localFont({
@@ -41,10 +42,10 @@ export default function RootLayout({
               <div className="h-full w-full bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:35px_35px] opacity-30 [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
             </div>
             <div className="relative z-10">
-              <div className="container mx-auto h-[100dvh] px-2">
+              <div className="container mx-auto h-[100dvh] px-4">
                 <Header />
                 {children}
-                <footer className="fixed bottom-3.5 whitespace-nowrap left-1/2 mx-auto flex -translate-x-1/2 items-center gap-[0.5ch] text-center text-muted-foreground">
+                <footer className="fixed bottom-0 w-full flex justify-center h-10 bg-gradient-to-t from-background to-transparent whitespace-nowrap left-1/2 mx-auto -translate-x-1/2 items-center gap-[0.5ch] text-center text-muted-foreground">
                   <span>Crafted by</span>
                   <AnimatedTooltip
                     label="Ayman Echakar"
@@ -58,6 +59,7 @@ export default function RootLayout({
           </ThemeProvider>
         </div>
       </body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>
   );
 }
