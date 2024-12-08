@@ -13,13 +13,12 @@ export const Header = () => {
           src={"/icons/shadcn-logo.png"}
           width={30}
           height={30}
-          className="rounded shadow-md border"
+          className="rounded shadow-md border select-none"
           alt="shadcn/ui"
         />
         <span>Pricing Page</span>
       </h1>
       <nav className="flex items-center gap-4">
-        <ThemeToggle />
         <Link
           target="_blank"
           href="https://github.com/aymanch-03/shadcn-pricing-page"
@@ -33,6 +32,7 @@ export const Header = () => {
             Github
           </Button>
         </Link>
+        <ThemeToggle />
       </nav>
     </header>
   );
