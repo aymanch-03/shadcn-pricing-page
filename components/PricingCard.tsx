@@ -22,7 +22,8 @@ export const PricingCard = ({
         "relative flex flex-col gap-8 overflow-hidden rounded-2xl border p-6 shadow",
         isHighlighted
           ? "bg-foreground text-background"
-          : "bg-background text-foreground"
+          : "bg-background text-foreground",
+        isPopular && "outline outline-[rgba(120,119,198)]"
       )}
     >
       {/* Background Decoration */}
@@ -34,7 +35,7 @@ export const PricingCard = ({
         {tier.name}
         {isPopular && (
           <Badge className="mt-1 bg-orange-900 px-1 py-0 text-white hover:bg-orange-900">
-            🔥 Popular
+            🔥 Most Popular
           </Badge>
         )}
       </h2>
