@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export const Pricing = () => {
   const [selectedPaymentFreq, setSelectedPaymentFreq] = useState(
-    PAYMENT_FREQUENCIES[0]
+    PAYMENT_FREQUENCIES[0],
   );
 
   return (

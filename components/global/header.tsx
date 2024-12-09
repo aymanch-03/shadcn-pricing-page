@@ -8,12 +8,12 @@ import React from "react";
 export const Header = () => {
   return (
     <header className="container mx-auto flex h-fit items-center justify-between py-4">
-      <h1 className="text-xl font-bold flex items-center gap-2">
+      <h1 className="flex items-center gap-2 text-xl font-bold">
         <Image
           src={"/icons/shadcn-logo.png"}
           width={30}
           height={30}
-          className="rounded shadow-md border select-none"
+          className="select-none rounded border shadow-md"
           alt="shadcn/ui"
         />
         <span>Pricing Page</span>

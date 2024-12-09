@@ -1,5 +1,6 @@
 import { Header } from "@/components/global/header";
 import AnimatedTooltip from "@/components/ui/animated-tooltip";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
@@ -45,7 +46,7 @@ export default function RootLayout({
               <div className="container mx-auto h-[100dvh] px-4">
                 <Header />
                 {children}
-                <footer className="fixed bottom-0 w-full flex justify-center h-10 bg-gradient-to-t from-background to-transparent whitespace-nowrap left-1/2 mx-auto -translate-x-1/2 items-center gap-[0.5ch] text-center text-muted-foreground">
+                <footer className="fixed bottom-0 left-1/2 mx-auto flex h-10 w-full -translate-x-1/2 items-center justify-center gap-[0.5ch] whitespace-nowrap bg-gradient-to-t from-background to-transparent text-center text-muted-foreground">
                   <span>Crafted by</span>
                   <AnimatedTooltip
                     label="Ayman Echakar"
@@ -58,6 +59,7 @@ export default function RootLayout({
             </div>
           </ThemeProvider>
         </div>
+        <Analytics />
       </body>
       <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
     </html>

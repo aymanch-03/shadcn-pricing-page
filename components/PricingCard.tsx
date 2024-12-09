@@ -23,7 +23,7 @@ export const PricingCard = ({
         isHighlighted
           ? "bg-foreground text-background"
           : "bg-background text-foreground",
-        isPopular && "outline outline-[rgba(120,119,198)]"
+        isPopular && "outline outline-[rgba(120,119,198)]",
       )}
     >
       {/* Background Decoration */}
@@ -69,7 +69,7 @@ export const PricingCard = ({
               key={index}
               className={cn(
                 "flex items-center gap-2 text-sm font-medium",
-                isHighlighted ? "text-background" : "text-foreground/60"
+                isHighlighted ? "text-background" : "text-foreground/60",
               )}
             >
               <BadgeCheck strokeWidth={1} size={16} />
@@ -86,7 +86,7 @@ export const PricingCard = ({
         iconPlacement="right"
         className={cn(
           "h-fit w-full rounded-lg",
-          isHighlighted && "bg-accent text-foreground hover:bg-accent/95"
+          isHighlighted && "bg-accent text-foreground hover:bg-accent/95",
         )}
       >
         {tier.cta}
